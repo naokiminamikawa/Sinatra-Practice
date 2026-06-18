@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>メモアプリ</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <div class="header">
+    <h1>メモアプリ</h1>
+    <a href="/new" class="add-btn">
+      追加
+    </a>
+  </div>
+
+  <ul class="memo-list">
+    <% @memos.each do |memo| %>
+      <li>
+        <a href="/memos/<%= memo[:id] %>"><%= memo[:title] %></a>
+      </li>
+    <% end %>
+  </ul>
+</body>
+</html>
