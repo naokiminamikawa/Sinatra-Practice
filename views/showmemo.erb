@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>メモ表示</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h3>メモアプリ</h3>
+
+    <h4><%= @memo[:title] %></h4>
+
+    <p class="memo-text">
+      <%= @memo[:content] %>
+    </p>
+
+    <div class="button-row">
+      <a href="/memos/<%= @memo[:id] %>/edit" class="button">
+        変更
+      </a>
+
+      <form action="/memos/<%= @memo[:id] %>" method="post" class="button-form">
+        <input type="hidden" name="_method" value="delete">
+        <button type="submit" class="button delete-button">
+          削除
+        </button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

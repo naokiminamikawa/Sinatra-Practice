@@ -1,0 +1,8 @@
+glob: "views/*.erb"
+
+exclude:
+  - "vendor/**/*"
+  - "views/editmemo.erb"
+  - "views/newmemo.erb"
+  - "views/showmemo.erb"
+  - "views/top.erb"
