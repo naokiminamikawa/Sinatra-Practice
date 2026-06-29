@@ -17,8 +17,11 @@ git clone https://github.com/naokiminamikawa/Sinatra-Practice.git
 ④ディレクトリ（Sinarta-Practice）へ移動
 cd Sinatra-Practice
 
-⑤ディレクトリ（Sinarta-Practice）上でアプリケーション起動コマンドを実行
-ruby app.rb
+⑤Bundlerを使って必要なGemをインストール
+bundle install
 
-⑥Webブラウザを開き、以下をURL入力し、アプリのトップ画面へアクセス
+⑥ディレクトリ（Sinarta-Practice）上でアプリケーション起動コマンドを実行
+bundle exec ruby app.rb
+
+⑦Webブラウザを開き、以下をURL入力し、アプリのトップ画面へアクセス
 http://localhost:4567
