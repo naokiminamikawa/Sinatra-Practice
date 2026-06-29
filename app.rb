@@ -46,7 +46,7 @@ get '/' do
 end
 
 # 入力画面
-get '/new' do
+get '/memos/new' do
   erb :newmemo
 end
 
